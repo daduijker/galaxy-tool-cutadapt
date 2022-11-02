@@ -85,7 +85,10 @@ def gunzip(tempdir):
         call(["gunzip", tempdir + "/files/" + x])
         gunzip_filename = os.path.splitext(x[:-3])
         #call(["mv", tempdir + "/files/" + x[:-3], tempdir + "/files/" +gunzip_filename[0].translate((string.maketrans("-. " , "___")))+gunzip_filename[1]])
-        call(["mv", tempdir + "/files/" + x[:-3], tempdir + "/files/" +gunzip_filename[0].translate((str.maketrans("-. " , "___")))+gunzip_filename[1]])
+        if x[:-3] == gunzip_filename[0].translate((str.maketrans("-. " , "___")))+gunzip_filename[1]:
+            continue
+        else:
+            call(["mv", tempdir + "/files/" + x[:-3], tempdir + "/files/" +gunzip_filename[0].translate((str.maketrans("-. " , "___")))+gunzip_filename[1]])
 
 def changename(tempdir):
     """
