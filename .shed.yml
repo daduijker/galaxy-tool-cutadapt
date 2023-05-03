@@ -1,0 +1,11 @@
+categories: 
+  - Fasta Manipulation
+  - Fastq Manipulation
+description: Wrapper for Cutadapt v.2.8. This repo supports Python3 and has been tested with Galaxy v.19.09 (expected to work with Galaxy v.20 as well). In contrast to cutadapt from the toolshed, this wrapper will handle zip files.
+long_description: |
+  Wrapper for Cutadapt v.2.8. This repo supports Python3 and has been tested with Galaxy v.19.09 (expected to work with Galaxy v.20 as well). In contrast to cutadapt from the toolshed, this wrapper will handle zip files.
+homepage_url: https://github.com/naturalis/galaxy-tool-cutadapt
+name: naturalis_cutadapt
+owner: duijker.d
+remote_repository_url: https://gitlab.com/LCAB-Bioinformatics/galaxy/naturalis/galaxy-tool-cutadapt
+type: unrestricted
